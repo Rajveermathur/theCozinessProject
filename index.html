@@ -12,47 +12,47 @@
   </head>
   <body>
     
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <div class="container" id="topID">
-
-        <a class="navbar-brand" href="#"><img src="assets/logo_navbar.png" width="70px" height="55px"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#footerID">Checking Footer</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+      <div class="container">
+          <a class="navbar-brand" href="#page-top"><img src="assets/logo_navbar.png" alt="Logo Photo" height="110px" width="150px" /></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+              Menu
+              <i class="fas fa-bars ms-1"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+              <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                  <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
               </ul>
-            </li>
-            </ul>
-        </div>
+          </div>
       </div>
-    </nav>
-
-    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+  </nav>
+    <!-- Carousel Code -->
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel" id="">
       <div class="carousel-inner">
         <div class="carousel-item active" data-bs-interval="10000">
           <img src="https://images.wallpaperscraft.com/image/single/yarn_thread_colorful_107516_1920x1080.jpg" class="d-block w-100" alt="carousel Pic 1">
+          <div class="carousel-caption d-none d-md-block">
+            <h1>First slide label</h1>
+            <p><h4>Some representative placeholder content for the first slide.</h4></p>
+          </div>
         </div>
         <div class="carousel-item" data-bs-interval="2000">
           <img src="https://picstatio.com/large/aebszz/knit-wool-knitting-wallpaper.jpg" class="d-block w-100" alt="carousel Pic 2">
+          <div class="carousel-caption d-none d-md-block">
+            <h1>First slide label</h1>
+            <p> <h4>Some representative placeholder content for the first slide.</h4></p>
+          </div>
         </div>
         <div class="carousel-item">
           <img src="https://picstatio.com/large/3eiqty/a-ball-of-yarn-wollen.jpg" class="d-block w-100" alt="carousel Pic 3">
+          <div class="carousel-caption d-none d-md-block">
+            <h1>First slide label</h1>
+            <p><h4>Some representative placeholder content for the first slide.</h4></p>
+          </div>
         </div>
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
@@ -69,20 +69,23 @@
 <div id="footerID">
 <div class="container">
   <footer class="d-flex flex-wrap justify-content-between align-items-center border-top">
-    <p class="col-md-4 mb-0 text-muted">© 2023 The Coziness Project <br> Made with Cozy &#10084;&#65039;. </p> 
-    <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
-      <img src="assets/logo_navbar.png" alt="Brand-Logo" class="footer-brand-photo">
-    </a>
+    <p class="col-md-4 mb-0 text-muted">© 2020 The Coziness Project <br> Made with Cozy &#10084;&#65039;. </p> 
+    <a class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+      <img src="assets/logo_navbar.png" alt="Brand-Logo" class="footer-brand-photo"/></a>
 
     <ul class="nav col-md-4 justify-content-end">
       <li class="nav-item"></li>
-      <a href="#topID"><button type="button" class="btn btn-outline-dark btn-sm">Back to Top</button></a>
+      <a href=""><button type="button" class="btn btn-outline-dark btn-sm">Back to Top</button></a>
     </ul>
   </footer>
 </div></div> 
   </body>
-  <script>
-    
-    //document.getElementById("demo").innerHTML = "Hello to The Coziness Project";
-    </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="script.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
 </html>
